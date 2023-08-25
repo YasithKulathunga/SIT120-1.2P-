@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>String Methods</h1>
+    <h4>String Length</h6>
+        <p>The length of this string is:</p>
+    <p id="length"></p>
+    <script>
+        let text = "The length of this string is:";
+        document.getElementById("length").innerHTML = text.length;
+    </script>
+<hr>
+    <h4>String Replace</h6>
+        <p id="replace">This is class code for Responsive web apps is SIT182</p>
+        <button onclick="replacefunction()">Try it</button>
+
+        <script>
+        function replacefunction() {
+        let text = document.getElementById("replace").innerHTML;
+        document.getElementById("replace").innerHTML =
+        text.replace("SIT182","SIT120");
+        }
+        </script>
+<hr>
+    <h4>The Subtring Method</h6>
+        <p>Tea, Coffee, Hot chocolate</p>
+        <p>What is your favourite drink ?</p>
+        <p id="subtring"></p>
+
+        <script>
+            let str = "Tea, Coffee, Hot chocolate";
+            document.getElementById("subtring").innerHTML = str.substring(5,11);
+        </script>
+<hr>
+    <h4>Converting to Uppercase</h4>
+        <p id="up">Make your day count!</p>
+        <button onclick="upfunction()">Click me</button>
+        
+        <script>
+        function upfunction() {
+        let text = document.getElementById("up").innerHTML;
+        document.getElementById("up").innerHTML = text.toUpperCase();
+        }
+        </script>
+<hr>
+    <h4>Contact method</h4>
+        <p>Let's</p>
+        <p>join</p>
+        <p>these</p>
+        <p>words</p>
+
+        <p id="contact"></p>
+
+        <script>
+            let text1 = "Let's";
+            let text2 = "join";
+            let text3 = "these";
+            let text4 = "words";
+            let text5 = text1.concat(" ",text2," ",text3," ",text4);
+            document.getElementById("contact").innerHTML = text5;
+        </script>
+
+
+
+</body>
+</html>

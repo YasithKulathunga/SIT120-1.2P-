@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Functions</h1>
+    <h4>Operation function</h4>
+    <p id="result"></p>
+    <script>
+        let a = operation(12, 5);
+        document.getElementById("result").innerHTML = a;
+        function operation(x,y)
+        {
+         return x * y + 8 + x;
+        }
+    </script>
+
+<hr>
+    <h4>Operation function</h4>
+    <p id="metres"></p>
+    <script>
+        let text = "The length is " + toMetres(77) + " Metres";
+        document.getElementById("metres").innerHTML = text;
+        
+        function toMetres(centimetres) {
+          return centimetres/100 ;
+        } 
+    </script>
+   
+
+    
+</body>
+</html>

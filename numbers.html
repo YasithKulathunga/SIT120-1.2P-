@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>The Number methods</h1>
+    <h4>The toString() method</h4>
+        <p id="tostring"></p>
+
+        <script>
+            let num = 1420;
+            document.getElementById("tostring").innerHTML =
+            num.toString() + " | " +
+            (1420).toString() + " | " +
+            (1000 + 400 + 20).toString();
+        </script>
+<hr>
+    <h4>The toExponential() method</h4>
+    <p>Return a string with the number rounded and using exponential mehtod</p>
+        <p id="expo"></p>
+
+        <script>
+            let x = 14.458;
+            document.getElementById("expo").innerHTML =
+            x.toExponential(1) + " | " + 
+            x.toExponential(2) + " | " + 
+            x.toExponential(4) + " | " + 
+            x.toExponential(7);
+        </script>
+<hr>
+    <h4>The toFixed() method</h4>
+    <p>Return a string with the number rounded to a given no of decimal points</p>
+        <p id="fix"></p>
+
+        <script>
+            let fixed = 14.4580;
+            document.getElementById("fix").innerHTML =
+            fixed.toFixed(0) + " | " +
+            fixed.toFixed(2) + " | " +
+            fixed.toFixed(3) + " | " +
+            fixed.toFixed(4);
+        </script>
+<hr>
+    <h4>The toPrecision() Method</h4>
+    <p>Return a string with a number written with a specified length</p>
+        <p id="pre"></p>
+
+        <script>
+            let p = 14.4580;
+            document.getElementById("pre").innerHTML = 
+            p.toPrecision() + " | " +
+            p.toPrecision(2) + " | " +
+            p.toPrecision(4) + " | " +
+            p.toPrecision(6);  
+        </script>
+<hr>
+    <h4>The valueOf() Method</h4>
+    <p>This method returns a number as a number:</p>
+
+        <p id="value"></p>
+
+        <script>
+            let v = 2840;
+
+            document.getElementById("value").innerHTML = 
+            v.valueOf() + " | " +
+            (2840).valueOf() + " | " +
+            (2800 + 40).valueOf();
+        </script>
+
+
+</body>
+</html>

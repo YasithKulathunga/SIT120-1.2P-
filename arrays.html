@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Array Methods</h1>
+    <h4>Array length</h4>
+    <p>["Tea", "Juice", "Coffee", "Milkshake","Water"]</p>
+    <p>The length is this array is:</p>
+        <p id="length"></p>
+
+        <script>
+            const drinks = ["Tea", "Juice", "Coffee", "Milkshake","Water"];
+            let size = drinks.length;
+            document.getElementById("length").innerHTML = size;
+        </script>
+<hr>
+    <h4>Array toString()</h4>
+    <p>["Tea", "Juice", "Coffee", "Milkshake","Water"]</p>
+    <p>The length is this array is:</p>
+        <p id="str"></p>
+
+        <script>
+            const drinks1 = ["Tea", "Juice", "Coffee", "Milkshake","Water"];
+            document.getElementById("str").innerHTML = drinks1.toString();
+        </script>
+<hr>
+    <h4>Flatten array</h4>
+        <p id="flat"></p>
+
+        <script>
+            const myArr = [[1,2],[3,4],[5,6]];
+            
+            const newArr = myArr.flat();
+            document.getElementById("flat").innerHTML = newArr;
+        </script>
+<hr>
+    <h4>Merging (Concatenating) Arrays</h4>
+        <p id="contact"></p>
+
+        <script>
+            const array1 = [4,5,6,7,8];
+            const array2 = [1,2,3]
+            
+            const array12 = array2.concat(array1);
+            document.getElementById("contact").innerHTML = array12;
+        </script>
+<hr>
+    <h4>Pop method</h4>
+        <p id="pop"></p>
+
+        <script>
+            const drinks2 = ["Tea", "Juice", "Coffee", "Milkshake","Water"];
+            drinks2.pop();
+            document.getElementById("pop").innerHTML = drinks2;
+        </script>
+
+
+</body>
+</html>

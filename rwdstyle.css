@@ -1,0 +1,55 @@
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .header {
+    background-color: #ffafee;
+    color: #5e1ba6;
+    padding: 15px;
+    margin-bottom: 0%;
+    text-align: center;
+  }
+
+  .container{
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: auto;
+  }
+
+  .flex{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 0;
+    position: relative;
+  }
+
+  .flex main{
+    flex-basis: 100%;
+    background-color: rgb(255, 147, 142);
+    padding: 1rem;
+  }
+
+  .flex section{
+    flex-basis: 50%;
+    background-color: rgb(183, 184, 255);
+    padding: 1rem;
+  }
+
+  .flex section:last-child{
+    background-color: rgb(136, 239, 255);
+  }
+
+  .page main{
+    flex-basis: 100%;
+    width: auto;
+    height: 200px;
+    background-color: rgb(95, 255, 114);
+  }
